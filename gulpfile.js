@@ -117,6 +117,7 @@ const server = (done) => {
     server: {
       baseDir: 'build'
     },
+    serveStatic,
     cors: true,
     notify: false,
     ui: false,
