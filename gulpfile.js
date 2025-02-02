@@ -114,14 +114,12 @@ const clean = () => {
 
 const server = (done) => {
   browser.init({
-    server: {
-      baseDir: 'build'
-    },
-    serveStatic,
-    cors: true,
+    server: 'build/',
+    index: 'index.html',
     notify: false,
-    ui: false,
     open: false,
+    cors: true,
+    ui: false,
   });
   done();
 }
